@@ -1,0 +1,354 @@
+.body-edits {
+    font-family: 'Inter';
+    background-color: black;
+    margin: 0;
+}
+
+/* <!-- Navbar Edits --> */
+@media only screen and (max-width: 995px) {
+    a.brand-icon img {
+        top: 2px;
+        left: -24%;
+    }
+
+    li.icons a {
+        font-size: 10px;
+    }
+
+    nav.navbar.navbar-expand-lg.nav-edits {
+        height: auto;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 0;
+        top: -1vw;
+        position: relative;
+    }
+
+    button.nav-shrink {
+        position: fixed;
+        top: 0vw;
+    }
+
+    span#nav-span {
+        height: 3vw;
+        font-size: 2em;
+        color: silver;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    a.brand-icon img {
+        top: -15px;
+        margin-left: 0vw;
+        height: 2em;
+        background: linear-gradient(to top, transparent 0%, red 100%);
+    }
+}
+
+.nav-shrink {
+    position: fixed;
+    top: 0vw;
+    right: 3vw;
+    text-decoration: none;
+}
+
+#nav-span {
+    position: relative;
+    height: 7vw;
+}
+
+.nav-edits :hover {
+    color: #00ff00;
+}
+
+.nav-icons a{
+    color: silver;
+    font-size: 1em;
+    text-align: center;
+    position: relative;
+}
+
+.nav-icons {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+.icons li{
+    width: 100%;
+    text-align: center;
+    float: right;
+    position: relative;
+    display:inline-block;
+    margin: auto 15% 0 auto;
+}
+
+.brand-icon img{
+    position: relative;
+    background: linear-gradient(to left, transparent 0%, red 50%);
+    left: -20%;
+    height: 80%;
+    width: 50px;
+
+}
+
+.nav-edits {
+    opacity: .5;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    background: linear-gradient(to top, transparent 0%, red 100%);
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    font-family: "Cinzel";
+    margin-bottom: 0;
+}
+
+.new_search {
+    display: none;
+}
+
+
+/* <!-- Main Body Edits --> */
+.gif-loading {
+    width: 50%;
+    opacity: 0.8;
+    z-index: 4;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 1311px) {
+    aside.trailer-info {
+        z-index: 2;
+        overflow: hidden;
+    }
+    aside.trailer-info h2 {
+        margin-top: 25%;
+        font-size: 1em;
+    }
+
+    aside.trailer-info h3 {
+        font-size: 1em;
+    }
+
+    aside.trailer-info p {
+        font-size: 0.8em;
+    }
+  }
+
+  @media only screen and (max-width: 1030px) {
+    aside.trailer-info {
+        z-index: 2;
+        overflow: hidden;
+        width: 40%;
+    }
+    aside.trailer-info h2 {
+        margin-top: 25%;
+        font-size: 1em;
+    }
+
+    aside.trailer-info h3 {
+        font-size: 1em;
+    }
+
+    aside.trailer-info p {
+        font-size: 0.8em;
+    }
+  }
+
+  @media only screen and (max-width: 980px) {
+    aside.trailer-info h2 {
+        margin-top: 5%;
+    }
+
+    section.movie_section img{
+        width: 30%;
+        height: 30%;
+
+    }
+
+    div.movie_titile img {
+        overflow: scroll;
+    }
+
+    main.main-edits {
+        height: 100%;
+        overflow: scroll;
+    }
+  }
+
+  @media only screen and (max-width: 838px) {
+    aside.trailer-info {
+        z-index: 2;
+        overflow: scroll;
+    }
+    aside.trailer-info h2 {
+        margin-top: 5%;
+        font-size: .8em;
+    }
+
+    aside.trailer-info h3 {
+        font-size: .8em;
+    }
+
+    aside.trailer-info button{
+        padding: 2%;
+        font-size: 1em;
+    }
+
+    button.trailer_play {
+        width: 20%;
+    }
+
+    p#trailer-text {
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 535px) {
+    h3#trailer-header {
+        display: none;
+    }
+    h2#trailer-mainh span{
+        display: none;
+    }
+
+    h2#trailer-mainh:after {
+        content: "Harry Potter";
+    }
+    aside.trailer-info button{
+        padding: 2%;
+        font-size: 1em;
+    }
+    aside.trailer-info {
+        overflow: hidden;
+        top: 2%;
+    }
+
+    section.movie_section h4 {
+        font-size: .8em;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    aside.trailer-info {
+        padding: 0%;
+        margin-top: 10vw;
+    }
+    div.trailer-div {
+        height: 33vw;
+    }
+  }
+
+.main-edits {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.main-show {
+    width: 100vw;
+    height: 33vw;
+}
+
+.movie_section {
+    margin: 2%;
+    color: #ffffff;
+    position: relative;
+}
+
+#movie_special {
+    margin: auto;
+}
+#movie_special img{
+    height: 20%;
+    width: 20%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.moive_title img{
+    height: 20vw;
+    width: 15vw;
+    padding: 3px;
+    overflow: scroll;
+}
+
+#movies_page {
+    padding: 5%;
+}
+
+#movies_page img{
+    margin: 1%;
+}
+
+.titles {
+    border-radius: 3%;
+}
+
+.titles:hover{
+    border: 1px solid rgba(192, 192, 192, .8);
+    height: 20.5vw;
+    width:15.5vw;
+}
+
+
+.trailer-div {
+    position: relative;
+}
+
+.trailer-info {
+    z-index: 2;
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    justify-content: space-between;
+    padding: 50px;
+    width: 33%;
+    height: 33vw;
+    background: linear-gradient(to left, transparent 0.5%, black 100%);
+}
+
+.trailer-info h2 {
+    margin-top: 20%;
+    font-family: "Cinzel";
+    font-size: 2em;
+}
+h3 {
+    font-family: "Cinzel";
+
+}
+
+.trailer-info p {
+    margin-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1rem;
+}
+
+.trailer-info button {
+    padding: 5px 50px 5px 50px;
+    background: rgba(220,220,220,.2);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 25px;
+
+    width: 80%;
+    margin: 0% 10% 0% 2%;
+}
